@@ -1,6 +1,6 @@
 #write the import statements to bring in homework 4 functions
 #valid_letter_grade, get_credit_points, get_grade_points, and get_grade_point_average
-from homework4 import (valid_letter_grade, get_credit_points,
+from src.homework.homework4 import (valid_letter_grade, get_credit_points,
                        get_grade_points, get_grade_point_average)
 '''
 Use the functions from homework4 to...
