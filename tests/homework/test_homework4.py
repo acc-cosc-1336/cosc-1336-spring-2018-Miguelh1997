@@ -2,7 +2,7 @@ import unittest
 
 #write the import statements to bring in homework 4 functions
 #valid_letter_grade, get_credit_points, get_grade_points, and get_grade_point_average
-from homework4 import sample_function, valid_letter_grade, get_credit_points, get_grade_points, get_grade_point_average
+from src.homework.homework4 import sample_function, valid_letter_grade, get_credit_points, get_grade_points, get_grade_point_average
 
 class TestHomework2(unittest.TestCase):
 
