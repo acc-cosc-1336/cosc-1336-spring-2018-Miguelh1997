@@ -1,5 +1,5 @@
 #write the import for the function get_count_A_C_G_and_T_in_string from assignment 6 file
-from src.assignment.assignment6 import get_count_A_C_G_and_T_in_string
+from src.assignments.assignment6 import get_count_A_C_G_and_T_in_string
 '''
 Using function get_count_A_C_G_and_T_in_string create a main function and...
 Call the function get_count_A_C_G_and_T_in_string from assignment 6 file
