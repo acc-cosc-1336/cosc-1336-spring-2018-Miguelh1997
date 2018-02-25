@@ -34,13 +34,8 @@ def main():
                 print('Please input valid number!\n')
         sumPrice += input_price
         average = sumPrice / i
-
         
-        
-    
-        
-        file.write(input_item + ' '+ str("%.2f"%input_price)+ '\n')
-
+        write_sales_data(file, input_item, input_price)
 
     file.write('\nTotal: ' + str(sumPrice))
     file.write('\nAvg Price: ' + str("%.2f" % average))
