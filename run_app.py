@@ -1,4 +1,4 @@
-import src.homework.homework6.py
+import src.assignments.main_assignment7
 
-#running this file will run the code in main_assignment6.py file without the need to modify
+#running this file will run the code in main_assignment7.py file without the need to modify
 #code in that file
