@@ -125,20 +125,20 @@ Return Value:
 '''
 
 def get_list_min_max_file():
-    return_list =  []
-    file = open('quiz.dat','r')
-    for line in file:
-        return_list.append(min(line),max(line))
-        
-        
-        
-       
-        
-        
-            
-    file.close()
+    file = open('quiz.dat', 'r')
+    tmp_list = []
 
-    return return_list
+    for line in file:
+        list1 = line.split()
+        i = 0
+        while i < len(list1):
+            if list1[i].isdigit():
+                list1[i] = int(list1[i])
+            i += 1
+
+        tmp_list += get_list_min_max(list1)
+
+    return get_list_min_max(tmp_list)
 
     
 
