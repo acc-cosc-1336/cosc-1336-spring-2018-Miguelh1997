@@ -50,6 +50,7 @@ class Test_Midterm(unittest.TestCase):
 
 
     def test_get_list_min_max_file(self):
+        self.assertEqual([2,89], get_list_min_max_file('quiz.data')
         '''
         5 points
         Test with quiz.data file the return value should be [2,89]
