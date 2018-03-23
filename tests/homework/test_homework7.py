@@ -36,5 +36,6 @@ class TestHomework7(unittest.TestCase):
     0.10000 0.40000 0.00000 0.20000
     0.10000 0.30000 0.20000 0.00000
     '''
-unittest.main(verbosity=2)
+if __name__ == '__main__':
+    unittest.main(verbosity=2)
     
