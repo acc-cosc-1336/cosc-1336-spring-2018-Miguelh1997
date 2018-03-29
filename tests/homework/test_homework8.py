@@ -39,4 +39,5 @@ class Test_Assign8(unittest.TestCase):
         self.assertEqual('Record deleted', remove_inventory_widget(self.widgets, 'Widget0'))
         self.assertEqual(2, len(self.widgets))
 
-unittest.main(verbosity=2)
+if __name__ == '__main__':
+    unittest.main(verbosity=4)
