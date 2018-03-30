@@ -34,5 +34,5 @@ class Test_Assign9(unittest.TestCase):
         self.assertEqual(306, invoice.get_invoice_total())
 
         #create the assert equal code
-
-unittest.main(verbosity=2)
+if __name__ == '__main__':
+    unittest.main(verbosity=2)
