@@ -11,11 +11,10 @@ If the widget exists it will update the quantity of the widgets.
 '''
 
 def add_inventory(dictionary, widget_name, quantity):
-    dictionary.update({widget_name:quantity})
     if widget_name in dictionary:
-        value = dictionary[widget_name]
-
-    return value
+        dictionary[widget_name] += quantity
+    else:
+        dictionary[widget_name] = quantity
     
     
     
@@ -36,5 +35,5 @@ def remove_inventory_widget(dictionary, widget_name):
         del dictionary[widget_name]
         return 'Record deleted'
     else:
-        'Item not found'
+        return 'Item not found'
     
