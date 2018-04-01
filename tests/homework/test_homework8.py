@@ -18,7 +18,7 @@ class Test_Assign8(unittest.TestCase):
 
     #create another test to add Widget1 and a value of 25 result should be 35
     def test_add_widget1_inventory_of_25(self):
-        self.widgets['Widget1'] += 25
+        add_inventory(self.widgets, 'Widget1', 25)
         self.assertEqual(35,self.widgets['Widget1'])
 
     #create a test to add Widget2 with a value of 15
@@ -28,16 +28,14 @@ class Test_Assign8(unittest.TestCase):
 
     #create a test to reduce Widget2 inventory by 5 result should be 10
     def test_add_widget2_inventory_reduce_5(self):
-        self.widgets['Widget2'] -= 5
+        add_inventory(self.widgets, 'Widget2', -5)
         self.assertEqual(10,self.widgets['Widget2'])
 
     #create a test to remove Widget0, get the length of self.widgets, the length should be 2
     #in same test, check that return value is 'Record deleted'
-    def test_add_widget0_remove_record(self):
-        add_inventory(self.widgets,'Widget2',15)
-        add_inventory(self.widgets, 'Widget1', 10)
+    def test_widget0_remove_record(self):
         self.assertEqual('Record deleted', remove_inventory_widget(self.widgets, 'Widget0'))
         self.assertEqual(2, len(self.widgets))
 
-if __name__ == '__main__':
-    unittest.main(verbosity=4)
+#if __name__ == '__main__':
+ #   unittest.main(verbosity=4)
