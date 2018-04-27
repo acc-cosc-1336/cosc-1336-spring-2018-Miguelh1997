@@ -1,3 +1,3 @@
-from src.homework.homework12.win import Win
+from src.assignments.assignment13.win import Win
 
-run = Win()
+w = Win()
