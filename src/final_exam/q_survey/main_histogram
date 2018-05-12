@@ -1,1 +1,11 @@
-d = display_histogram
+from histogram import display_histogram
+
+file = None
+file = open("survey.dat", "r")
+
+for line in file:
+    items = line.split()
+    display_histogram(items)
+        
+file.close()
+
