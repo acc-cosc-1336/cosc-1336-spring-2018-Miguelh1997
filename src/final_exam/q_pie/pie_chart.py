@@ -1,5 +1,9 @@
 from pie_arc import PieArc
 class PieChart:
-    pie_arcs = []
+    
+    def __init__(self, pie_arcs):
+        self.pie_arcs = pie_arcs
     
     def draw(self):       
+        for arc in pie_arcs:
+            arc.draw()
