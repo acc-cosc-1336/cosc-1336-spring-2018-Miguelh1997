@@ -1,6 +1,13 @@
-def display_histogram():
-    filename = "survey.dat"
-    file = open(filename,"r")
-    for i in file:
-        print(i,'*'*int(i))
-    
+def display_histogram(values):
+
+    for value in values:
+        i = 0
+        print(value, end=' ')
+        while i < value:
+            print('*', end=' ')
+
+            i += 1
+
+        print()
+
+    print()
