@@ -47,7 +47,9 @@ def main():
             total_grade_points += grade_points
             gpa = get_grade_point_average(total_credit, total_grade_points)
         print('\nStudent ' +str(i) + ' GPA is: ' + "%.01f\n" % gpa)
-                    
+                   
+          
+main()
                  
 
                             
