@@ -4,7 +4,7 @@ from src.assignments.assignment4 import factorial
 
 class Test_Assign4(unittest.TestCase):
 
-    def test_sample_one(self):
+    def test_factorial_w_value_5(self):
         '''
         This is an example to guide you in creating test cases.
         The sample_function takes an argument and returns the same value. If it takes a 2 it will return a 2.
@@ -12,7 +12,7 @@ class Test_Assign4(unittest.TestCase):
         '''
         self.assertEqual(120, factorial(5))
 
-    def test_sample_two(self):
+    def test_factorial_w_value_6(self):
         '''
         This is an example to guide you in creating test cases.
         The sample_function takes an argument and returns the same value. If it takes a 2 it will return a 2.
