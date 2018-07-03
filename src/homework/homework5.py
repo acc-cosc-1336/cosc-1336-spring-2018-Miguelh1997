@@ -5,14 +5,10 @@
 #The function will read the file line by line and display to screen to produce the table described in homework 5.
 
 
-def write_sales_data(item, price):
-    file = open("items.txt","w")
+def write_sales_data(file_object, item, price):
     item = str(item)
     price = str(price)
     file.write(item +' '+ price )
-    
-    file.close()
-
 
 def read_sales_data(file_object):
     file = open(file_object,"r")
