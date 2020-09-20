@@ -5,7 +5,7 @@ class Player:
     
     def check_come_out_roll(self):
         dsum = self.d1 + self.d2
-        if self.d1 > 6 or self.d2 > 6:
+        if self.d1 < 0 or self.d1 > 6 and self.d2 < 0 or self.d2 > 6:
             return 'Invalid Range'
         elif dsum == 7 or dsum == 11:
             return 'Winner'
